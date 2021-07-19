@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 523697034}
   - component: {fileID: 523697033}
   - component: {fileID: 523697036}
+  - component: {fileID: 523697037}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -722,6 +723,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 523697032}
+--- !u!114 &523697037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523697030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf67bae12c9f4c478ae3baa75e0bc46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  damage:
+    baseValue: 0
+  armor:
+    baseValue: 0
 --- !u!1001 &673989553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2241,7 +2259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 0
+    baseValue: 5
   armor:
     baseValue: 5
 --- !u!4 &942803229430078244
