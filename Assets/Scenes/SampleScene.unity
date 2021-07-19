@@ -737,9 +737,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 0
+    baseValue: 5
   armor:
-    baseValue: 0
+    baseValue: 1
 --- !u!1001 &673989553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2165,6 +2165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e287fee1c580393478338a2324b6ccb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 3200798540020775865}
 --- !u!114 &919132149282384056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,6 +2182,7 @@ MonoBehaviour:
   movementMask:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 3200798540020775865}
 --- !u!54 &919132149282384057
 Rigidbody:
   m_ObjectHideFlags: 0

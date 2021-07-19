@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
 	public Interactable focus;
 	public LayerMask movementMask;
+	public Animator animator;
+
+
 	Camera cam;
 	PlayerMotor motor;
     // Start is called before the first frame update
@@ -48,7 +51,11 @@ public class PlayerController : MonoBehaviour
 
 			}
 		}
-    }
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			Attack();
+		}
+	}
 
 	void SetFocus(Interactable newFocus)
     {
@@ -76,5 +83,15 @@ public class PlayerController : MonoBehaviour
 		
 		focus = null;
 		motor.StopFollowingTarget();
+    }
+
+	void Attack()
+    {
+		// Play Attack animation
+		animator.SetTrigger("attack");
+	
+		//Detect enemies in range of attack
+
+		//Damage Them
     }
 }

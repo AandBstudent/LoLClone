@@ -9,6 +9,7 @@ public class PlayerMotor : MonoBehaviour
 
 	NavMeshAgent agent;
     Transform target;
+    public Animator animator;
 	
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class PlayerMotor : MonoBehaviour
     public void MoveToPoint(Vector3 point)
     {
         agent.SetDestination(point);
+        animator.SetTrigger("locomotion");
     }
 
     public void FollowTarget(Interactable newTarget)
